@@ -1,13 +1,35 @@
 
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./css/style.css">
     <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
-    <script defer src="./script.js"></script>
-    <title>Weather App</title>
-  </head>
-  <body></body>
+    <script defer src="./js/script.js"></script>
+    <title>AJAX Weather Lab</title>
+</head>
+
+<body>
+    <h1 id="header">Weather Lab</h1>
+    <main class="container">
+        <h3>Weather for:</h3>
+        <p id="city"></p>
+        <h3>Temperature:</h3>
+        <p id="temp"></p>
+        <h3>Feels Like:</h3>
+        <p id="feels"></p>
+        <h3>Weather:</h3>
+        <p id="weatherDescr"></p>
+    </main>
+
+    <form class="inputForm">
+        <input type="text" placeholder="Enter a location" />
+        <input type="submit" value="Get Weather Forecast" />
+    </form>
+
+</body>
+
 </html>
